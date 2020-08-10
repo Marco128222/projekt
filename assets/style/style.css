@@ -1,0 +1,110 @@
+/* standart settings for every .php-file */
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --red1: #881238;
+    --red2: #660B28;
+    --red3: #c22434;
+    --red4: #ea3c37;
+    --red5: #FF8B8B;
+    --red5: #EE4540;
+    --gray1: #281226;
+    --gray2: #140712;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    z-index: 10000;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--red4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--red1);
+    height: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--red1);
+}
+
+/* end of standart settings for every .php-file */
+
+/* the regular header */
+
+.header {
+    z-index: 110;
+    background-color: var(--gray2);
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 60px;
+    height: 200px;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .65);
+}
+
+.header li {
+    z-index: 100000;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.header li a {
+    color: white;
+    text-decoration: initial;
+}
+
+.header .logo {
+    width: 400px;
+}
+
+/* end of the regular header */
+
+/* the regular main-settings */
+
+.filterBody {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 10%, #28122634 80%), url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(0.0);
+}
+
+main {
+    position: relative;
+    width: 80%;
+    padding: 20px;
+    background-color: var(--gray2);
+    left: 10%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .65);
+}
+
+/* end of the regular main-settings */

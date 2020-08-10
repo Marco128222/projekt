@@ -1,0 +1,342 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    background-color: #aa1443;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    z-index: 10000;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+/* HEADER */
+
+#div {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    position: absolute;
+    width: 150px;
+    top: -15px;
+    z-index: 999;
+}
+
+header {
+    position: fixed;
+    z-index: 10000;
+    height: 70px;
+    z-index: 1000;
+    margin: auto;
+    width: 100%;
+    background-color: #42081d;
+    padding: 0 0 0 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header #nav-1 {
+    display: flex;
+    height: 100%;
+    color: white;
+    align-items: center;
+    align-content: center;
+    font-size: 1.2vw;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    flex-wrap: nowrap;
+}
+
+header #nav-2 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-weight: 500;
+    align-content: center;
+    color: white;
+    font-size: 1vw;
+    right: 40px;
+    position: absolute;
+    flex-wrap: nowrap;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 0px 24px;
+    cursor: pointer;
+}
+
+/* END OF HEADER */
+
+/* titleGame */
+
+.titleGame {
+    top: 70px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    height: 40vw;
+    background-image: url("https://cdn.discordapp.com/attachments/632252009755574304/736244724687437855/Ellie_von_Ellie_v01.jpg");
+}
+
+.filter {
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(90deg, #550a22 0%, rgba(161, 161, 161, 0) 200%);
+    background-size: cover;
+    border: none;
+    position: absolute;
+    height: 40vw;
+}
+.titleGame #logo {
+    position: relative;
+    width: 32vw;
+    z-index: 11;
+}
+
+.titleGame .game {
+    position: relative;
+    display: inline-block;
+    padding-left: 4vw;
+    flex-wrap: wrap;
+    z-index: 11;
+    align-content: center;
+    align-items: center;
+    height: 32vw;
+    display: flex;
+}
+
+.titleGame h1 {
+    position: relative;
+    line-height: 3vw;
+    z-index: 11;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+.titleGame .playnow {
+    padding: 1vw 2vw;
+    z-index: 11;
+    cursor: pointer;
+    border-bottom: 0.6vw solid #c82721;
+    background-color: #EE4540;
+    position: relative;
+    top: 2vw;
+}
+
+.titleGame .playgame {
+    line-height: 5vw;
+    z-index: 11;
+    border-bottom: 0.3vw solid #c82721;
+    color: #EE4540;
+}
+
+/* end of titleGame */
+
+.car {
+    display: inline-block;
+    width: 25vw;
+    background-color: #660B28;
+    position: relative;
+    height: 35vw;
+    border: 1px solid black;
+    margin: 2vw;
+}
+
+.info0 {
+    width: 100%;
+    padding-top: 0.6vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.3vw;
+    position: relative;
+}
+
+.info1 {
+    width: 100%;
+    padding-top: 0.6vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1vw;
+    position: relative;
+}
+
+.imgs {
+    width: 100%;
+    height: 40%;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    z-index: 100;
+}
+
+#main {
+    position: relative;
+    width: 88vw;
+    margin: auto;
+}
+
+/* SEACHBAR */
+
+#navi {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.select {
+    position: relative;
+    width: 20vw;
+    padding: 1vw 0.4vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #660B28;
+    font-size: 1vw;
+    color: white;
+    border: none;
+}
+
+option {
+    font-size: 1vw;
+    padding: 5px;
+    background-color: #660B28;
+    border: none;
+}
+
+#seach-form {
+    margin-top: 120px;
+    width: 80%;
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.label-active .pointes {
+    display: none;
+}
+
+.input-group {
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    display: block;
+    font-weight: 700;
+    height: 45px;
+    color: white;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.input-group input:focus {
+    border-bottom: solid 4px #EE4540;
+}
+
+.input-group #labels {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 2vw;
+    line-height: 15px;
+    pointer-events: none;
+    transition: 180ms ease;
+}
+
+.input-group #seach-input {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    border: none;
+    border-bottom: solid 6px #550a22;
+    transition: 240ms ease;
+    font-size: 27px;
+    line-height: 15px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 11px;
+    color: #FFFFFF;
+    background-color: #660B28;
+}
+
+.label-active {
+    top: 2px !important;
+    font-size: 14px !important;
+    line-height: 10px !important;
+    color: #FF8B8B;
+}
+
+.motor {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    width: 80%;
+    border-top: 0.2vw solid #550a22;
+    left: 10%;
+    bottom: 0;
+    justify-content: space-around;
+}
+
+.motor li {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.1vw;
+    font-size: 1.2vw;
+    border-bottom: 0.2vw solid #550a22;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1vw;
+}
+
+.carinfo {
+    margin: 2vw;
+    border-top: 0.2vw solid #550a22;
+    padding-top: 0.5vw;
+}
+
+.carinfo p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+    line-height: 1.7vw;
+    text-align: center;
+}
+
+/* END OF SEACHBAR */

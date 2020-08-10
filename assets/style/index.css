@@ -1,0 +1,443 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #a71845;
+}
+
+main {
+    position: relative;
+}
+
+
+#div {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    position: absolute;
+    width: 20vw;
+    top: 13vh;
+    
+    z-index: 999;
+}
+
+header {
+    position: fixed;
+    height: 70px;
+    z-index: 1000;
+    margin: auto;
+    width: 100%;
+    background-color: #42081d;
+    padding: 0 0 0 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header #nav-1 {
+    display: flex;
+    height: 100%;
+    color: white;
+    align-items: center;
+    align-content: center;
+    font-size: 1.2vw;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    flex-wrap: nowrap;
+}
+
+header #nav-2 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-weight: 500;
+    align-content: center;
+    color: white;
+    font-size: 1vw;
+    right: 40px;
+    position: absolute;
+    flex-wrap: nowrap;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 0px 24px;
+    cursor: pointer;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    height: calc(58vw - 70px);
+    transition: 500ms all;
+}
+
+/* SLIDERS */
+
+.slide {
+    position: absolute;
+    width: 100vw;
+    background-position: center;
+    height: 100%;
+    transition: 500ms all;
+    background-size: cover;
+}
+
+/* END OF SLIDERS */
+
+.center-section {
+    position: relative;
+    width: 100%;
+}
+
+/* SHADER */
+
+.shader {
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 201;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+#shader-1:hover {
+    opacity: 1;
+    transition: 300ms all;
+}
+#shader-2:hover {
+    opacity: 1;
+    transition: 300ms all;
+}
+#shader-1:hover ~ #p1 {
+    opacity: 0 !important;
+    transition: 300ms all;
+}
+#shader-2:hover ~ #p2 {
+    opacity: 0 !important;
+    transition: 300ms all;
+}
+#p1, #p2 {
+    opacity: 1;
+    transition: 300ms all;
+}
+.shadertext {
+    width: 100%;
+    transition: 300ms all;
+    position: absolute;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0 !important;
+    top: 80%;
+}
+.shader:hover .shadertext {
+    top: 50%;
+    transition: 300ms all;
+    opacity: 1 !important;
+}
+
+/* END OF SHADER */
+
+.wrapper-middle-items {
+    position: relative;
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    left: 5%;
+    justify-content: center;
+}
+
+.wrapper-middle-items .item {
+    position: relative;
+    top: -8.5vw;
+    width: 49%;
+    height: 25vw;
+}
+
+.acr-underheading {
+    background: #550a22;
+    height: 5px;
+    margin-top: 0.5vw;
+    margin-bottom: 2.5vw;
+    position: relative;
+    width: 30px;
+}
+
+.p-head {
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 0vw;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.h1-head {
+    width: 100%;
+    text-align: center;
+    font-family: "Acura Bespoke Light", Arial, sans-serif;
+    position: relative;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+/* ITEMS */
+
+#item-1 {
+    background-image: url("https://cdn.discordapp.com/attachments/632252009755574304/732689435937865848/ferrari_Screen_2218_edit_v01.jpg");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#item-2 {
+    background-image: url("https://cdn.discordapp.com/attachments/632252009755574304/732689315045441546/carr_edit3.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.item p {
+    position: absolute;
+    color: white;
+    bottom: 1vw;
+    left: 1vw;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* END OF ITEMS */
+
+/* SEACHFORM */
+
+#seach-form {
+    width: 80%;
+    left: 10%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-active .pointes {
+    display: none;
+}
+
+.input-group {
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    display: block;
+    font-weight: 700;
+    height: 100px;
+    color: white;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.input-groups {
+    position: absolute;
+    top: 10vw;
+    left: 10%;
+    margin: 10px 10px 10px 10px;
+    display: block;
+    font-weight: 700;
+    height: 70px;
+    color: white;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+}
+
+.input-group input:focus {
+    border-bottom: solid 4px #EE4540;
+}
+
+.input-groups input:focus {
+    border-bottom: solid 4px #EE4540;
+}
+
+.input-group #labels {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 2.5vw;
+    line-height: 15px;
+    pointer-events: none;
+    transition: 180ms ease;
+}
+
+.input-groups #labels-1 {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 27px;
+    line-height: 15px;
+    pointer-events: none;
+    transition: 180ms ease;
+}
+
+.input-group #inputs {
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-bottom: solid 6px #550a22;
+    transition: 240ms ease;
+    font-size: 27px;
+    line-height: 15px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 11px;
+    color: #FFFFFF;
+    background-color: #660B28;
+}
+
+.input-groups #inputs-1 {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-bottom: solid 6px #550a22;
+    transition: 240ms ease;
+    font-size: 27px;
+    line-height: 15px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 11px;
+    color: #FFFFFF;
+    background-color: #660B28;
+}
+
+.label-active {
+    top: 8px !important;
+    font-size: 14px !important;
+    line-height: 10px !important;
+    color: #FF8B8B;
+}
+
+input[type="text"]:active {
+    top: 8px !important;
+    font-size: 14px !important;
+    line-height: 10px !important;
+    color: #FF8B8B;
+}
+
+#seach-order {
+    font-size: 40px;
+    position: absolute;
+    border: none;
+    background: none;
+    right: 40px;
+    top: 20px;
+}
+
+#seachs-order {
+    font-size: 40px;
+    position: absolute;
+    border: none;
+    background: none;
+    right: 40px;
+    top: 5px;
+}
+
+#seach-section {
+    position: absolute;
+    top: -10vw;
+    height: 70px;
+    z-index: 999;
+}
+
+/* END OF SEACHFORM */
+
+/* INFO */
+
+.info-section {
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+    width: 85%;
+    left: 7.5%;
+    position: relative;
+}
+
+.info-section img {
+    width: 100%;
+    z-index: 9;
+    position: relative;
+    height: 100%;
+}
+.filter {
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(90deg, #550a22 0%, rgba(161, 161, 161, 0) 200%);
+    background-size: cover;
+    border: none;
+    position: absolute;
+    height: 36.65vw;
+}
+
+.info-section h1 {
+    position: absolute;
+    color: white;
+    bottom: 12vw;
+    z-index: 999;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+    font-size: 1.5vw;
+    left: 4vw;
+    line-height: 2.3vw;
+}
+
+/* END OF INFO */
+
+/* FOOTER */
+footer {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    background-color: #42081d;
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+footer h1 {
+    color: white;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

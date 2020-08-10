@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --red1: #881238;
+    --red2: #660B28;
+    --red3: #c22434;
+    --red4: #ea3c37;
+    --red5: #FF8B8B;
+    --red5: #EE4540;
+    --gray1: #281226;
+    --gray2: #140712;
+}
+
+body {
+    background-color: var(--gray1);
+}
+
+/* titleGame */
+
+.titleGame {
+    top: 70px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+    align-items: center;
+    height: 40vw;
+    background-image: url("https://cdn.discordapp.com/attachments/632252009755574304/736244716064079904/Ellie_von_Ellie_2_v01.jpg");
+}
+
+.filter {
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(90deg, #550a22 0%, rgba(161, 161, 161, 0) 200%);
+    background-size: cover;
+    border: none;
+    position: absolute;
+    height: 40vw;
+}
+
+.titleGame #logo {
+    position: relative;
+    width: 32vw;
+    z-index: 11;
+}
+
+.titleGame .game {
+    position: relative;
+    display: inline-block;
+    padding-left: 4vw;
+    flex-wrap: wrap;
+    z-index: 11;
+    align-content: center;
+    align-items: center;
+    height: 32vw;
+    display: flex;
+}
+
+.titleGame h1 {
+    position: relative;
+    line-height: 3vw;
+    z-index: 11;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+.titleGame .playnow {
+    padding: 1vw 2vw;
+    z-index: 11;
+    cursor: pointer;
+    border-bottom: 0.6vw solid #c82721;
+    background-color: #EE4540;
+    position: relative;
+    top: 2vw;
+}
+
+.titleGame .playgame {
+    line-height: 5vw;
+    z-index: 11;
+    border-bottom: 0.3vw solid #c82721;
+    color: #EE4540;
+}
+
+/* end of titleGame */
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    z-index: 10000;
+    height: 70px;
+    z-index: 1000;
+    margin: auto;
+    width: 100%;
+    background-color: #42081d;
+    padding: 0 0 0 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header #nav-1 {
+    display: flex;
+    height: 100%;
+    color: white;
+    align-items: center;
+    align-content: center;
+    font-size: 1.2vw;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    flex-wrap: nowrap;
+}
+
+.header #nav-2 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-weight: 500;
+    align-content: center;
+    color: white;
+    font-size: 1vw;
+    right: 40px;
+    position: absolute;
+    flex-wrap: nowrap;
+}
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header ul li {
+    padding: 0px 24px;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    padding-top: 70px;
+    position: relative;
+}
+
+.carsect {
+    background-color: var(--red1);
+    margin: 40px;
+    left: 15vw;
+    height: 21vw;
+    position: relative;
+    width: 70vw;
+    z-index: 10;
+}
+
+.carsect .img {
+    position: relative;
+    width: 23vw;
+    height: 11vw;
+    background-size: cover;
+}
+
+.carsect .cardiv {
+    padding: 0.7vw;
+}
+
+.carsect .carname {
+    padding-bottom: 0.3vw;
+    font-size: 1.3vw;
+    font-weight: 900;
+    color: var(--gray2);
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.4vw solid var(--red2);
+    display: inline-block;
+}
+
+.carsect .carspan {
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carsect .carkategorie {
+    font-size: 1.1vw;
+    padding-top: 0.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0.8vw;
+}
+
+.carsect .carinfos {
+    display: flex;
+    width: 23vw;
+    position: relative;
+    justify-content: space-around;
+    font-weight: 900;
+    font-size: 1vw;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carsect .carinfos .coa {
+    padding: 0.3vw 0.4vw;
+    margin: 0.7vw;
+}
+
+.carsect .carinfos .col {
+    width: 0.1vw;
+    margin: 0.7vw 0vw;
+    position: relative;
+    display: block;
+    background-color: black;
+}
+
+.rentalinfos {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -15vw;
+    width: 15vw;
+    left: 25vw;
+}
+
+.rentalinfos li {
+    font-weight: 400;
+    font-size: 1.2vw;
+    padding-bottom: 0.5vw;
+}
+
+.rentalinfos li span {
+    font-weight: 900;
+}
+
+.price {
+    position: absolute;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    right: 0;
+    padding: 7.5vw 3vw 1vw 1vw;
+    z-index: 999;
+}
+
+.price .week {
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+.price .day {
+    font-weight: 300;
+    text-align: right;
+    padding-top: 0.3vw;
+    font-size: 1.3vw;
+}
+
+.status {
+    z-index: 3;
+}
+
+.status .state {
+    position: absolute;
+    top: 2vw;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 0.1vw;
+    right: 0vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    height: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding: 0vw 0.5vw 0vw 1.5vw;
+    z-index: 300;
+}
+
+.status .state::before {
+    content: "  ";
+    position: absolute;
+    top: 0vw;
+    right: -1vw;
+    width: 1vw;
+    height: 2vw;
+    border-radius: 0 0.3vw 0.3vw 0vw;
+    z-index: 30;
+}
+
+.triangle-up-left {
+    position: absolute;
+    right: -1vw;
+    width: 0;
+    top: 1.9vw;
+    height: 0;
+    border-right: 1vw solid transparent;
+    z-index: 10;
+}
+
+.verfügbar {
+    background-color: rgb(52, 165, 42);
+}
+
+.verfügbar::before {
+    background-color: rgb(52, 165, 42);
+}
+.o {
+    border-top: 1.3vw solid rgb(32, 100, 25);
+}
+
+.vergeben {
+    background-color: brown;
+}
+
+.vergeben::before {
+    background-color: brown;
+}
+.t {
+    border-top: 1.3vw solid rgb(121, 30, 30);
+}
+
+.status .text {
+    position: relative;
+    z-index: 300;
+    font-size: 1vw;
+}
